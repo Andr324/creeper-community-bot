@@ -124,5 +124,8 @@ const utente = message.mentions.members.first() || message.member
                             //Comando c!help
                             if(message.content == "c!help") {
                                 message.channel.send("Per ora i comandi sono: c!clear (solo staff); c!say (per tutti); c!kick (per staff) e c!ban (per staff)")
-                        }
+                        //Stato personalizzato
+                        bot.user.SetActivity('Creeper Community (c!help per comandi)', { type: "WATCHING" }).catch(console.error)
+                            }
+
                     })
